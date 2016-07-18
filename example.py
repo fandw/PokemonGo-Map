@@ -334,7 +334,7 @@ def main():
 
     full_path = os.path.realpath(__file__)
     path, filename = os.path.split(full_path)
-    pokemonsJSON = json.load(open(path + '/pokemon.json'))
+    pokemonsJSON = json.load(open(path + '\\pokemon.json'))
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-u", "--username", help="PTC Username", required=True)
